@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html>
+<html lang="pt-BR">
 	<head>
 		<meta charset="UTF-8">
 		<title>BiblioWeb - Pesquisa no Acervo - Resultados</title>
