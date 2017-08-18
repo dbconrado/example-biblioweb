@@ -37,7 +37,14 @@ if (!$sucesso) {
    echo "Cadastrado com sucesso!";
 }
 
-/* QUINTO E ÚLTIMO PASSO: fechar a conexão */
+$id_gerado = mysqli_insert_id($conexao);
+
+/* QUINTO PASSO: fechar a conexão */
 mysqli_close($conexao);
+
+/* Aplicando a técnica POST/Redirect/GET */
+$redirecionar = "/biblioweb/livro.php?id=${id_gerado}";
+
+header("Location: ${redirecionar}");
 
 ?>
